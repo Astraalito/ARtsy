@@ -3,9 +3,9 @@ import { XR, ARButton } from "@react-three/xr";
 import XrHitModel from "./components/XrHitModel";
 import Overlay from "./components/Overlay/Overlay";
 import useArtPiece from "./store/artPieceStore";
-import { useEffect } from "react";
-import { startSession } from "@react-three/xr";
+import { useEffect, Suspense } from "react";
 import CustomARButton from "./components/CustomARButton";
+import Spinner from "./components/Spinner";
 
 function App() {
 
@@ -35,12 +35,14 @@ function App() {
 					</div>
 				</div>
 			)}
-			<Canvas>
-				<XR>
-					<pointLight position={[0,-3,2]}></pointLight>
-					<XrHitModel />
-				</XR>
-			</Canvas>
+				<Suspense fallback={<Spinner />}>
+					<Canvas>
+							<XR>
+								<pointLight position={[0,-3,2]}></pointLight>
+								<XrHitModel />
+							</XR>
+					</Canvas>
+				</Suspense>
 			{isPresentingAR && (
 				<Overlay />
 			)}
