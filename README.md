@@ -2,6 +2,8 @@
 
 ARtsy est une application innovante de visualisation d'œuvres d'art en réalité augmentée. Elle permet aux utilisateurs de visualiser des œuvres d'art dans leur environnement réel, à l'échelle, et d'accéder à toutes les informations relatives à ces œuvres.
 
+![banner](https://github.com/user-attachments/assets/65f275bb-c0f7-4807-bdcc-5a4fa6eb1731)
+
 ## Technologies Utilisées
 
 - **React Native** : Pour le développement de l'application mobile.
