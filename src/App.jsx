@@ -21,28 +21,29 @@ function App() {
 	return (
 		<>
 			{!isPresentingAR && (
-				<div>
-					<div className="logo-top">
-						<img src="img/Logo_White.png" alt="Toggle Icon" className="logo-img" />
-					</div>
-					<CustomARButton />
-					<div className="button-bottom">
-						<div className="button-random">
-							<button onClick={selectRandomArtpiece} className="round-button toggle-button small-button">
-								<img src="img/svg/random.svg" alt="Toggle Icon" className="button-icon" />
-							</button>
-						</div>
+			<div>
+				<div className="logo-top">
+					<img src="img/Logo_White.png" alt="Toggle Icon" className="logo-img" />
+				</div>
+				<CustomARButton />
+				<div className="button-bottom">
+					<div className="button-random">
+						<button onClick={selectRandomArtpiece} className="round-button toggle-button small-button">
+							<img src="img/svg/random.svg" alt="Toggle Icon" className="button-icon" />
+						</button>
 					</div>
 				</div>
+			</div>
 			)}
-				<Suspense fallback={<Spinner />}>
-					<Canvas>
-							<XR>
-								<pointLight position={[0,-3,2]}></pointLight>
-								<XrHitModel />
-							</XR>
-					</Canvas>
-				</Suspense>
+			<Suspense fallback={<Spinner />}>
+				<Canvas>
+						<XR>
+							<pointLight position={[0,-3,2]}></pointLight>
+							<XrHitModel />
+						</XR>
+				</Canvas>
+			</Suspense>
+
 			{isPresentingAR && (
 				<Overlay />
 			)}
