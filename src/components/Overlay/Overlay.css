@@ -1,0 +1,284 @@
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transform: translateY(0%);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	pointer-events: auto;
+	padding: 32px;
+	overflow-y: scroll;
+	justify-content: flex-start;
+}
+
+.text-container{
+	height: 90%;
+	overflow-y: scroll;
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1)0%,  rgba(0, 0, 0, 1)80%, rgba(0, 0, 0, 0)100%);
+}
+
+.text-group{
+	height: 120%;
+}
+
+.overlay h1 {
+	padding-bottom: 28px;
+}
+.overlay h2 {
+	font-size: 1.1rem;
+	padding-bottom: 12px;
+}
+
+.description {
+	padding-top: 24px;
+}
+
+.button-topLeft {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	transform: translateX(0%);
+	display: flex;
+	align-items: flex-end;
+	gap: 15px;
+	transition: transform 0.5s ease-out;
+}
+.button-topLeft.hidden {
+	transform: translateX(-100%);
+	transition: transform 0.5s ease-out;
+}
+
+.button-bottomCenter {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: flex-end;
+	gap: 15px;
+	padding: 10px;
+}
+
+.button-bottomRight {
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	transform: translateX(-50%) translateY(0%);
+	display: flex;
+	align-items: flex-end;
+	gap: 15px;
+	transition: transform 0.2s ease-out;
+}
+.button-bottomRight.hidden {
+	transform: translateX(-50%) translateY(200%);
+	transition: transform 0.2s ease-out;
+}
+
+.tools-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	padding: 10px;
+	transform: translateX(100%);
+	transition: transform 0.5s ease-out;
+}
+.tools-container.displayed {
+	transform: translateX(0%);
+	transition: transform 0.5s ease-out;
+
+}
+
+.round-button {
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.round-button.active {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.big-button{
+	width: 80px;
+	height: 80px;
+}
+.small-button{
+	width: 60px;
+	height: 60px;
+}
+
+.reset-button {
+	width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+}
+
+.button-icon {
+	width: 24px;
+	height: 24px;
+	/* Change color filter here: https://isotropic.co/tool/hex-color-to-css-filter/ */
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(63deg) brightness(104%) contrast(104%);
+}
+
+.active .button-icon {
+	/* Change color filter here: https://isotropic.co/tool/hex-color-to-css-filter/ */
+	filter: invert(0%) sepia(59%) saturate(0%) hue-rotate(56deg) brightness(92%) contrast(103%);
+}
+
+.small-icon {
+	width: 36px;
+	height: 36px;
+}
+.big-icon {
+	width: 48px;
+	height: 48px;
+}
+
+.toggle-button, .exit-button {
+	position: relative;
+}
+
+
+
+
+.slider-container {
+	position: absolute;
+	width: 100%;
+	margin-bottom: 10%;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 40px;
+}
+
+
+.overlay.visible {
+	opacity: 1;
+}
+
+.fadeOut{
+    opacity:0;
+    transform: translateY(100%);
+    transition: opacity 0.3s transform 0.5s ease-out;
+
+}
+.fadeIn{
+    opacity:1;
+    transform: translateY(0%);
+    transition: opacity 0.3s transform 0.5s ease-out;
+}
+
+.flipped {
+	transform: scaleX(-1);
+}
+
+
+
+/*
+****************************************
+
+CHANGER LE STYLE AVEC CE SITE
+https://range-input-css.netlify.app/ 
+
+***************************************
+*/
+
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	cursor: pointer;
+	width: 25rem;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+	outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+	background-color: #c7c7c7;
+	border-radius: 0.5rem;
+	height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	margin-top: -12px; /* Centers thumb on the track */
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	height: 2rem;
+	width: 2rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+	outline: 3px solid #ffffff;
+	outline-offset: 0.125rem;
+  }
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+	background-color: #c7c7c7;
+	border-radius: 0.5rem;
+	height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+	background-color: #ffffff;
+	border: none; /*Removes extra border that FF applies*/
+	border-radius: 0.5rem;
+	height: 2rem;
+	width: 2rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+	outline: 3px solid #ffffff;
+	outline-offset: 0.125rem;
+  }
+
+
+
+  /*
+   TESTING 
+   */
+
+  .stateTest {
+	position: absolute;
+	margin-top: 30px;
+	color: white;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+	padding: 10px;
+	display: flex;
+	align-items: flex-end;
+	gap: 15px;
+  }
