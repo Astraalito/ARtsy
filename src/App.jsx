@@ -20,9 +20,9 @@ function App() {
 
 	return (
 		<>
-			<img src="/img/bg.jpg" className="bg-img" />
 			{!isPresentingAR && (
 			<div>
+				<img src="/img/bg.jpg" className="bg-img" />
 				<div className="logo-top">
 					<img src="img/Logo_White.png" alt="Toggle Icon" className="logo-img" />
 				</div>
