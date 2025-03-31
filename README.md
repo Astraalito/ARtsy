@@ -25,6 +25,8 @@ Les utilisateurs peuvent placer les œuvres d'art dans leur environnement réel,
 
 Il est possible de faire pivoter les œuvres d'art pour les visualiser sous différents angles.
 
+![rotate](https://github.com/user-attachments/assets/c1eaa943-e0ed-4065-8218-3f0ba988f366)
+
 ### Redimensionnement
 
 Les utilisateurs peuvent agrandir ou réduire la taille des œuvres d'art pour mieux les adapter à leur espace.
