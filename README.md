@@ -21,19 +21,25 @@ L'application propose actuellement une sélection de 9 œuvres d'art différente
 
 Les utilisateurs peuvent placer les œuvres d'art dans leur environnement réel, en utilisant la caméra de leur appareil pour visualiser l'œuvre à l'échelle réelle.
 
+![cursor](https://github.com/user-attachments/assets/e429fa68-0aae-41e6-b9eb-7b76e914874f)
+
 ### Rotation
 
 Il est possible de faire pivoter les œuvres d'art pour les visualiser sous différents angles.
 
-![rotate](https://github.com/user-attachments/assets/c1eaa943-e0ed-4065-8218-3f0ba988f366)
+![rotate](https://github.com/user-attachments/assets/1dd884ee-5718-48b6-b12c-90fcf796098b)
 
 ### Redimensionnement
 
 Les utilisateurs peuvent agrandir ou réduire la taille des œuvres d'art pour mieux les adapter à leur espace.
 
+![scaling](https://github.com/user-attachments/assets/2857bff5-0385-4b40-95c4-26c378e84835)
+
 ### Ajustement de la Hauteur
 
 Les œuvres peuvent être déplacées verticalement pour être positionnées à la hauteur souhaitée.
+
+![upDown](https://github.com/user-attachments/assets/7cf1f045-7cfe-4c9e-821a-8b8dfe15a018)
 
 ## Améliorations Futures
 
