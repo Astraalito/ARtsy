@@ -20,6 +20,7 @@ function App() {
 
 	return (
 		<>
+			<img src="/img/bg.jpg" className="bg-img" />
 			{!isPresentingAR && (
 			<div>
 				<div className="logo-top">
