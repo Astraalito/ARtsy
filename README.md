@@ -1,8 +1,21 @@
-# ARtsy
+<div align="center">
+  <br />
+    <a href="https://ar-tsy.vercel.app/" target="_blank">
+      <img src="https://github.com/user-attachments/assets/65f275bb-c0f7-4807-bdcc-5a4fa6eb1731" alt="Project Banner">
+    </a>
+  <br />
+  
+  <div>
+    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
+  </div>
 
-ARtsy est une application innovante de visualisation d'œuvres d'art en réalité augmentée. Elle permet aux utilisateurs de visualiser des œuvres d'art dans leur environnement réel, à l'échelle, et d'accéder à toutes les informations relatives à ces œuvres.
+  <h3 align="center">L'art à portée de main.</h3>
 
-![banner](https://github.com/user-attachments/assets/65f275bb-c0f7-4807-bdcc-5a4fa6eb1731)
+   <div align="center">
+     ARtsy est une application innovante de visualisation d'œuvres d'art en réalité augmentée. Elle permet aux utilisateurs de visualiser des œuvres d'art dans leur environnement réel, à l'échelle, et d'accéder à toutes les informations relatives à ces œuvres.
+    </div>
+</div>
 
 ## Technologies Utilisées
 
